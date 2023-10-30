@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Combination Calculator with Formula</title>
+    <link rel="stylesheet" type="text/css" href="e222.css">
+    <script src="en2.js"></script>
+</head>
+<body>
+
+    <h1>Combination Formula Description</h1>
+
+    <p>Combinations, often referred to as "n choose r," are a fundamental concept in combinatorics and probability theory. They represent the number of ways to choose <em>r</em> items from a set of <em>n</em> items without regard to the order of selection. Combinations are used in various applications, such as forming teams, selecting items, and more.</p>
+
+    <p>Combination Formula</p>
+    <p>The combination formula calculates the number of combinations (C) for selecting <em>r</em> items from a set of <em>n</em> items:</p>
+    <pre>C(n, r) = n! / (r! * (n - r)!)</pre>
+
+    <p>Where:</p>
+    <ul>
+        <li><em>C(n, r)</em> represents the number of combinations of <em>n</em> items taken <em>r</em> at a time.</li>
+        <li><em>n!</em> denotes the factorial of <em>n</em>, which is the product of all positive integers from 1 to <em>n</em>.</li>
+        <li><em>r!</em> denotes the factorial of <em>r</em>.</li>
+        <li><em>(n - r)!</em> denotes the factorial of the difference between <em>n</em> and <em>r</em>.</li>
+    </ul>
+
+<p><strong> Calculator</strong></p>
+
+    <p>Enter the total number of items (n):</p>
+    <input type="number" id="nInput" min="0" required>
+
+    <p>Enter the number of items to choose (r):</p>
+    <input type="number" id="rInput" min="0" required>
+<br>
+    <button onclick="calculateCombination()">Calculate Combination</button>
+
+    <p id="result"></p>
+
+   
+
+    
+</body>
+</html>

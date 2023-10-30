@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slope Calculator</title>
+    <link rel="stylesheet" type="text/css" href="e222.css">
+    <script src="en2.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Slope Calculator</h1>
+        <p>In statistics, the mode of a dataset is the value that appears most frequently. To calculate the mode, you can use the formula:</p>
+        <h4>Mode = The value(s) that appear most frequently</h4>
+        <p>The mode is the statistical measure of central tendency that represents the most common value(s) in a dataset. It's commonly used to describe the central peak in a frequency distribution.</p>
+        <form>
+            <label for="x1">Enter x1:</label>
+            <input type="number" id="x1" step="any" required><br>
+            <label for="y1">Enter y1:</label>
+            <input type="number" id="y1" step="any" required><br>
+            <label for="x2">Enter x2:</label>
+            <input type="number" id="x2" step="any" required><br>
+            <label for="y2">Enter y2:</label>
+            <input type="number" id="y2" step="any" required><br>
+            <button type="button" onclick="calculateSlope()">Calculate</button>
+            
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="slope.js"></script>
+</body>
+</html>

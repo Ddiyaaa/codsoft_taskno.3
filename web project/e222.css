@@ -1,0 +1,29 @@
+body{
+    background-color: gainsboro;
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    font-size: 20px;
+}
+
+h2 ,h1{
+    background-color: #0a0a0a;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    margin: 0px;
+}
+
+
+p {
+    margin: 10px 0;
+}
+
+input {
+    margin: 5px 0;
+}
+
+button {
+    font-size: 20px;
+    margin: 10px 0;
+}

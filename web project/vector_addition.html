@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vector Addition Calculator</title>
+    <link rel="stylesheet" type="text/css" href="e222.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Vector Addition Calculator</h1>
+        <p>In physics and mathematics, vector addition is the process of combining multiple vectors to determine the resultant vector. The formula for vector addition is:</p>
+        <h4>R = A + B</h4>
+        <p>Where:</p>
+        <ul>
+            <li><strong>R (Resultant Vector):</strong> This is the vector that represents the combination of vectors A and B.</li>
+            <li><strong>A (Vector A):</strong> This is the first vector to be added.</li>
+            <li><strong>B (Vector B):</strong> This is the second vector to be added.</li>
+        </ul>
+        <p>Vector addition is used in various fields, including physics, engineering, and computer graphics, to calculate the net effect of multiple forces or motions.</p>
+        <form>
+            <label for="ax">Enter the x-component of vector A:</label>
+            <input type="number" id="ax" step="any" required><br>
+            <label for="ay">Enter the y-component of vector A:</label>
+            <input type="number" id="ay" step="any" required><br>
+            <label for="bx">Enter the x-component of vector B:</label>
+            <input type="number" id="bx" step="any" required><br>
+            <label for="by">Enter the y-component of vector B:</label>
+            <input type="number" id="by" step="any" required><br>
+            <button type="button" onclick="calculateVectorAddition()">Calculate</button>
+           
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="en2.js"></script>
+</body>
+</html>

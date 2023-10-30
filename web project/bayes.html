@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bayes' Theorem Calculator</title>
+    <link rel="stylesheet" type="text/css" href="e222.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Bayes' Theorem Calculator</h1>
+        <p>Bayes' theorem allows us to update our prior probability (P(A)) based on new evidence (P(B)) and the likelihood of the evidence given the event (P(B|A)). The formula is:</p>
+        <h4> P(A|B) = P(A) ⋅ P(B|A) / P(B) </h4>
+        <p>Where:</p>
+        <ul>
+            <li><strong>Prior Probability (P(A)):</strong> This is the probability of an event A occurring before taking any new evidence into account.</li>
+            <li><strong>Likelihood (P(B|A)):</strong> This is the probability of observing evidence B given that event A has occurred.</li>
+            <li><strong>Evidence (P(B)):</strong> This is the total probability of observing evidence B.</li>
+            <li><strong>P(A|B):</strong> This is the posterior probability, the probability of event A occurring after considering the evidence B.</li>
+        </ul>
+
+        </p>
+        <form>
+            <label for="prior">Prior Probability (P(A)):</label>
+            <input type="number" id="prior" step="any" required><br>
+            <label for="likelihood">Likelihood (P(B|A)):</label>
+            <input type="number" id="likelihood" step="any" required><br>
+            <label for="evidence">Evidence (P(B)):</label>
+            <input type="number" id="evidence" step="any" required><br>
+            <button type="button" onclick="calculateBayes()">Calculate</button>
+           
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="en2.js"></script>
+</body>
+</html>

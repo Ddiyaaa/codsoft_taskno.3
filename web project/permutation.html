@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Permutation Calculator</title>
+    <link rel="stylesheet" type="text/css" href="e222.css">
+    <script src="en2.js"></script>
+</head>
+<body>
+    <h2>What is Permutation?</h2>
+<p>In mathematics, permutation relates to the act of arranging all the members of a set into some sequence or order. In other words, if the set is already ordered, then the rearranging of its elements is called the process of permuting. Permutations occur, in more or less prominent ways, in almost every area of mathematics. They often arise when different orderings on certain finite sets are considered.</p>
+
+<p>Permutation Formula</p>
+<p>A permutation is the choice of r things from a set of n things without replacement and where the order matters.</p>
+<p><strong><sup>n</sup>P<sub>r</sub> = (n!) / (n-r)!</strong></p>
+    
+
+    <p>Enter the total number of items (n):</p>
+    <input type="number" id="nInput" min="0" required>
+
+    <p>Enter the number of items to choose (r):</p>
+    <input type="number" id="rInput" min="0" required>
+<br>
+    <button onclick="calculatePermutation()">Calculate Permutation</button>
+
+    <p id="result"></p>
+
+    
+</body>
+</html>

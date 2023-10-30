@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Geometric Distribution Calculator</title>
+    <link rel="stylesheet" type="text/css" href="e222.css">
+    <script src="en2.js"></script>
+</head>
+<body>
+    <h2>Geometric Distribution Formula Description</h2>
+
+    <p>The geometric distribution is a probability distribution that models the number of trials required for a success to occur in a sequence of independent Bernoulli trials. It is commonly used in situations where you want to find the probability of the first success occurring on a specific trial, such as the first successful attempt at a game or the first occurrence of an event.</p>
+
+    <p>Geometric Distribution Formula</p>
+    <p>The probability of the first success occurring on the <em>x</em>-th trial can be calculated using the geometric distribution formula:</p>
+    <pre>P(X = x) = (1 - p)^(x - 1) * p</pre>
+
+    <p>Where:</p>
+    <ul>
+        <li><em>P(X = x)</em> represents the probability of the first success occurring on the <em>x</em>-th trial.</li>
+        <li><em>p</em> is the probability of success on a single trial.</li>
+    </ul>
+ 
+    <p><strong>Distribution Calculator</strong></p>
+
+    <p>Enter the probability of success on a single trial (p):</p>
+    <input type="number" step="0.01" id="pInput" min="0" max="1" required>
+
+    <p>Enter the number of trials until the first success (x):</p>
+    <input type="number" id="xInput" min="1" required>
+    <br>
+    <button onclick="calculateGeometricDistribution()">Calculate Probability</button>
+
+    <p id="result"></p>
+
+    
+</body>
+</html>

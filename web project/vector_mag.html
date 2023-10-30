@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vector Magnitude Calculator</title>
+    <link rel="stylesheet" type="text/css" href="e222.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Vector Magnitude Calculator</h1>
+        <p>In physics and mathematics, the magnitude of a vector represents its length or size. It's calculated using the formula:</p>
+        <!-- <sub> is used to make text appear slightly lower than the regular text line. It's often used for mathematical subscripts like x₁. -->
+<!-- <sup> is used to make text appear slightly higher than the regular text line. It's commonly used for mathematical superscripts like x². -->
+        <h4>|V| = √(V<sub>x</sub><sup>2</sup> + V<sub>y</sub><sup>2</sup> + V<sub>z</sub><sup>2</sup>)</h4>
+        <p>Where:</p>
+        <ul>
+            <li><strong>|V| (Magnitude of Vector V):</strong> This is the length or size of the vector V.</li>
+            <li><strong>V<sub>x</sub>, V<sub>y</sub>, V<sub>z</sub>:</strong> These are the components of vector V along the X, Y, and Z axes, respectively.</li>
+        </ul>
+        <p>The magnitude of a vector is a fundamental concept in vector analysis and is used to determine the length of vectors in various applications, including physics, engineering, and computer graphics.</p>
+        <form>
+            <label for="x">Enter the x-component of the vector:</label>
+            <input type="number" id="x" step="any" required><br>
+            <label for="y">Enter the y-component of the vector:</label>
+            <input type="number" id="y" step="any" required><br>
+            <button type="button" onclick="calculateVectorMagnitude()">Calculate</button>
+            
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="en2.js"></script>
+
+</body>
+</html>

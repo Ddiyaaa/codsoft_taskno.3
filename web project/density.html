@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Density Calculator</title>
+    <link rel="stylesheet" type="text/css" href="e222.css">
+    <script src="en2.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Density Calculator</h1>
+        <p>Density (ρ) is a physical property that represents the amount of mass (m) contained within a given volume (V) of a substance. It is calculated using the formula:</p>
+        <h4>ρ = V / m</h4>
+        <p>Where:</p>
+        <ul>
+            <li><strong>ρ (Density):</strong> This represents the density of the substance and is typically measured in units like kg/m³, g/cm³, or lb/ft³
+</p>
+        <form>
+            <label for="mass">Enter mass (m):</label>
+            <input type="number" id="mass" step="any" required><br>
+            <label for="volume">Enter volume (V):</label>
+            <input type="number" id="volume" step="any" required><br>
+            <button type="button" onclick="calculateDensity()">Calculate</button>
+            
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="density.js"></script>
+</body>
+</html>

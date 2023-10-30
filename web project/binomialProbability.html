@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Binomial Probability Calculator</title>
+    <link rel="stylesheet" type="text/css" href="e222.css">
+    <script src="en2.js"></script>
+</head>
+<body>
+    <p><a id="Formula" name="Formula"></a></p>
+<h2 >Binomial Distribution Formula</h2>
+<p>The binomial distribution formula is for any random variable</a> X, given by;</p>
+<table class="table table-bordered">
+<tbody>
+<tr>
+<td>P(x:n,p) = <sup>n</sup>C<sub>x</sub> p<sup>x</sup> (1-p)<sup>n-x</sup></p>
+<p>Or</p>
+<p>P(x:n,p) = <sup>n</sup>C<sub>x</sub> p<sup>x</sup> (q)<sup>n-x</sup></td>
+</tr>
+</tbody>
+</table>
+<p>Where,</p>
+<p>n = the number of experiments</p>
+<p>x = 0, 1, 2, 3, 4, …</p>
+<p>p = Probability of Success in a single experiment</p>
+<p>q = Probability of Failure in a single experiment = 1 &#8211; p</p>
+<p>The binomial distribution formula can also be written in the form of n-Bernoulli trials, where <sup>n</sup>C<sub>x</sub> = n!/x!(n-x)!. Hence,</p>
+<p><strong>P(x:n,p) = n!/[x!(n-x)!].p<sup>x</sup>.(q)<sup>n-x</sup></strong><br />
+    <p>Binomial Probability Calculator</p>
+     
+    <p>Enter the number of experiments (n):</p>
+    <input type="number" id="nInput" min="0" required>
+
+    <p>Enter the probability of success on a single experiment (p):</p>
+    <input type="number" step="0.01" id="pInput" min="0" max="1" required>
+
+    <p>Enter the number of successful outcomes (x):</p>
+    <input type="number" id="xInput" min="0" required>
+<br>
+    <button onclick="calculateBinomialProbability()">Calculate Probability</button>
+
+    <p id="result"></p>
+
+    
+</body>
+</html>

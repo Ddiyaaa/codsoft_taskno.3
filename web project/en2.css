@@ -1,0 +1,42 @@
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    
+    background-color: gainsboro;
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+    /* backdrop-filter: blur(5px); Adjust the blur radius as needed */
+
+}
+
+
+header {
+    background-color: #0a0a0a;
+    color: #fff;
+    padding: 30px;
+}
+
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    
+    font-size: 25px; 
+    display: grid;
+    /* "grid" refers to a two-dimensional layout system that allows you to organize and position elements on a webpage in rows and columns.  */
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0c0c0c;
+    font-weight: bold;
+}

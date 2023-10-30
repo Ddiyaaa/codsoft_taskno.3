@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratic Formula Calculator</title>
+    <link rel="stylesheet" type="text/css" href="e222.css">
+    <script src="en2.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Quadratic Formula Calculator</h1>
+        <p>The quadratic formula is a fundamental tool for solving quadratic equations of the form <em>ax<sup>2</sup> + bx + c = 0</em>. The formula is:</p>
+        <h4>x = (-b ± √(b<sup>2</sup> - 4ac)) / (2a)</h4>
+        <p>Where:</p>
+        <ul>
+            <li><strong>x:</strong> This represents the solutions (roots) of the quadratic equation.</li>
+            <li><strong>a:</strong> Coefficient of <em>x<sup>2</sup></em>.</li>
+            <li><strong>b:</strong> Coefficient of <em>x</em>.</li>
+            <li><strong>c:</strong> Constant term.</li>
+        </ul>
+        <p>The quadratic formula provides a method for finding the real or complex solutions to quadratic equations and is widely used in mathematics and physics.</p>
+        <form>
+            <label for="a">Enter the value of 'a':</label>
+            <input type="number" id="a" step="any" required><br>
+            <label for="b">Enter the value of 'b':</label>
+            <input type="number" id="b" step="any" required><br>
+            <label for="c">Enter the value of 'c':</label>
+            <input type="number" id="c" step="any" required><br>
+            <button type="button" onclick="calculateQuadratic()">Calculate</button>
+            
+        </form>
+        <div id="result"></div>
+    </div>
+    
+</body>
+</html>

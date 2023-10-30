@@ -1,0 +1,120 @@
+
+        
+        body {
+            /* Margin is the space outside the border of an element.*/
+            margin: 0; 
+            /* Padding is the space between an element's content and its border. */
+
+            padding: 0;
+            background-color:gainsboro;
+            display: flex;          
+             
+            /* in CSS makes child elements line up in a row (or column), adjusting their sizes automatically to fit the container. */
+            flex-direction: column;
+
+            /* arranges child elements in a vertical stack, like a list, rather than in a horizontal row. */
+            align-items: center;
+
+            /* centers the child elements horizontally within their container. */
+            justify-content: center;
+
+            /* justify-content deals with horizontal alignment of elements in a single row or column.  */
+            height: 100vh;
+        }
+
+        header {
+            
+            background-color: #050505;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 0px;
+            margin-bottom: 40px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            width: 100%; /* Utilize the full screen width */
+        }
+
+        li {
+            margin: 0;
+            padding: 0;
+            flex: 1; /* Equal width for all buttons */
+        }
+
+        li:not(:last-child) {
+            margin-right: 20px; /* Add margin to create space between buttons */
+        }
+
+        nav a {
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+
+        /* Customize button styles as needed */
+        .button-container {
+            
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .button-image {
+            margin: 0 auto;
+             max-width: 200px;
+            max-height: 200px;
+            display: block;
+        }
+
+        .button-text {
+            font-family: monospace;
+           font-size: 25px;
+            color: #fff;
+            max-height:200px;
+            padding: 38px;
+        }
+
+        #button-general {
+            .button-text{
+                margin-top: 13px;
+                padding: 50px;
+                background-color: #0d0d0d;
+            }
+        }
+
+        #button-physics {
+            .button-text{
+                margin-top: 13px;
+                padding: 50px;
+                background-color: #0d0d0d;
+        }
+        }
+
+        #button-geometry {
+            
+            .button-text{
+               margin-top: 13px;
+               padding: 39px;
+                background-color: #0d0d0d;
+            
+            }
+        }
+
+        #button-probability {
+            .button-text{
+                margin-top: 13px;
+         background-color: #0d0d0d;
+        }
+        }
+
+        #button-statistics {
+            .button-text{
+                margin-top: 13px;
+                background-color: #0d0d0d;
+        }
+        }
+    

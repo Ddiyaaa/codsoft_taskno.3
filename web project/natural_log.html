@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Log Calculator</title>
+    <link rel="stylesheet" type="text/css" href="e222.css">
+    <script src="en2.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Natural Log Calculator</h1>
+        <p>The natural logarithm, denoted as <em>ln(x)</em>, is a mathematical function that calculates the logarithm to the base <em>e</em> (Euler's number) of a given number <em>x</em>. The formula for the natural logarithm is:</p>
+        <h4>ln(x)</h4>
+        <p>Where:</p>
+        <ul>
+            <li><strong><em>ln(x):</em></strong> This represents the natural logarithm of the number <em>x</em>.</li>
+            <li><strong><em>e (Euler's number):</em></strong> Euler's number is a mathematical constant approximately equal to 2.71828.</li>
+            <li><strong><em>x:</em></strong> This is the number for which you want to find the natural logarithm.</li>
+        </ul>
+        <p>The natural logarithm is widely used in mathematics, science, and engineering for various calculations, including exponential growth, decay, and rates of change.</p>
+        <form>
+            <label for="number">Enter a number:</label>
+            <input type="number" id="number" step="any" required><br>
+            <button type="button" onclick="calculateNaturalLog()">Calculate</button>
+            
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="naturallog.js"></script>
+</body>
+</html>

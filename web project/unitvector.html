@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Vector Calculator</title>
+    <link rel="stylesheet" type="text/css" href="e222.css">
+    <script src="en2.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Unit Vector Calculator</h1>
+        <p>In mathematics and physics, a unit vector is a vector with a magnitude (length) of 1. It's used to represent the direction of a vector without regard to its scale. The formula for finding the unit vector is:</p>
+        <h4>The unit vector is (<em>i</em>, <em>j</em>, <em>k</em>)</h4>
+        <p>Where:</p>
+        <ul>
+            <li><strong>The unit vector:</strong> Represents the direction of the original vector with a magnitude of 1.</li>
+            <li><strong><em>i</em>, <em>j</em>, <em>k</em>:</strong> Are the components of the unit vector along the X, Y, and Z axes, respectively.</li>
+        </ul>
+        <p>Unit vectors are used in various applications, including physics, computer graphics, and engineering, to describe direction without altering the vector's length.</p>x
+        <form>
+            <label for="x">Enter x-component of the vector:</label>
+            <input type="number" id="x" step="any" required><br>
+            <label for="y">Enter y-component of the vector:</label>
+            <input type="number" id="y" step="any" required><br>
+            <label for="z">Enter z-component of the vector (optional):</label>
+            <input type="number" id="z" step="any"><br>
+            <button type="button" onclick="calculateUnitVector()">Calculate</button>
+           
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="unitvector.js"></script>
+</body>
+</html>
